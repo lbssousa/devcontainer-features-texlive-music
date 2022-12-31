@@ -7,7 +7,7 @@ Install an up-to-date TeX Live distribution from official site.
 
 ```json
 "features": {
-    "ghcr.io/lbssousa/texlive-music-devcontainer-features/texlive:1": {}
+    "ghcr.io/lbssousa/devcontainer-features-texlive-music/texlive:1": {}
 }
 ```
 
@@ -64,4 +64,4 @@ Install an up-to-date TeX Live distribution from official site.
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/lbssousa/texlive-music-devcontainer-features/blob/main/src/texlive/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/lbssousa/devcontainer-features-texlive-music/blob/main/src/texlive/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
