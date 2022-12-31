@@ -28,7 +28,7 @@ check_packages curl ca-certificates bzip2
 echo "Downloading LilyPond version, version ${LILYPOND_VERSION}..."
 curl -O https://gitlab.com/lilypond/lilypond/-/releases/v${LILYPOND_VERSION}/downloads/${LILYPOND_PACKAGE}
 
-echo "Installing LilyPond..."
+echo "Installing ${LILYPOND_PACKAGE}..."
 tar xzvf ${LILYPOND_PACKAGE} -C /opt
 
 for bin in /opt/lilypond-${LILYPOND_VERSION}/bin
