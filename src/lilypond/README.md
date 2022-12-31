@@ -7,7 +7,7 @@ Install an up-to-date version of LilyPond from official site.
 
 ```json
 "features": {
-    "ghcr.io/lbssousa/texlive-music-devcontainer-features/lilypond:1": {}
+    "ghcr.io/lbssousa/devcontainer-features-texlive-music/lilypond:1": {}
 }
 ```
 
@@ -15,10 +15,10 @@ Install an up-to-date version of LilyPond from official site.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select or enter a LilyPond version to install. | string | 2.22.2 |
+| version | Select or enter a LilyPond version to install. | string | 2.24.0 |
 
 
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/lbssousa/texlive-music-devcontainer-features/blob/main/src/lilypond/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/lbssousa/devcontainer-features-texlive-music/blob/main/src/lilypond/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
