@@ -38,8 +38,9 @@ fi
 echo "Installing ${LILYPOND_PACKAGE}..."
 tar xzvf ${LILYPOND_PACKAGE} -C /opt
 
-for bin in /opt/lilypond-${LILYPOND_VERSION}/bin
+for bin in /opt/lilypond-${LILYPOND_VERSION}/bin/*
 do
+    echo "Symlinking ${bin} to /usr/local/bin..."
     ln -s ${bin} /usr/local/bin
 done
 
