@@ -2,7 +2,7 @@
 set -e
 
 LILYPOND_VERSION=${VERSION:-2.24.0}
-LILYPOND_PACKAGE=lilypond-${LILYPOND_VERSION}.linux-x86_64.tar.gz
+LILYPOND_PACKAGE=lilypond-${LILYPOND_VERSION}-linux-x86_64.tar.gz
 
 # Taken from https://github.com/devcontainers/features/blob/main/src/go/install.sh
 apt_get_update()
