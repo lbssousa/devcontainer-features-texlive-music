@@ -1,7 +1,7 @@
 {
     "name": "TeX Live from official site installer",
     "id": "texlive",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Install an up-to-date TeX Live distribution from official site.",
     "options": {
         "version": {
