@@ -1,0 +1,20 @@
+{
+    "name": "LilyPond from official site installer",
+    "id": "lilypond",
+    "version": "1.0.0",
+    "description": "Install an up-to-date version of LilyPond from official site.",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "2.24.0",
+                "2.25.0"
+            ],
+            "default": "2.24.0",
+            "description": "Select or enter a LilyPond version to install."
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

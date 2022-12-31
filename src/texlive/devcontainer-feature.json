@@ -1,0 +1,253 @@
+{
+    "name": "TeX Live from official site installer",
+    "id": "texlive",
+    "version": "1.0.0",
+    "description": "Install an up-to-date TeX Live distribution from official site.",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest",
+                "2022",
+                "2021",
+                "2020",
+                "2019",
+                "2018",
+                "2017",
+                "2016"
+            ],
+            "default": "latest",
+            "description": "Select or the TeX Live historic version to install."
+        },
+        "scheme": {
+            "type": "string",
+            "proposals": [
+                "basic",
+                "bookpub",
+                "context",
+                "custom",
+                "full",
+                "gust",
+                "infraonly",
+                "medium",
+                "minimal",
+                "small"
+            ],
+            "default": "basic",
+            "description": "Select or enter the TeX Live scheme to install. WARNING: _minimal_ scheme **DOES NOT** include LaTeX!"
+        },
+        "collection-basic": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-basic installation."
+        },
+        "collection-bibtexextra": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-bibtexextra installation."
+        },
+        "collection-binextra": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-binextra installation."
+        },
+        "collection-context": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-context installation."
+        },
+        "collection-fontsextra": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-fontsextra installation."
+        },
+        "collection-fontsrecommended": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-fontsrecommended installation."
+        },
+        "collection-fontutils": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-fontutils installation."
+        },
+        "collection-formatsextra": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-formatsextra installation."
+        },
+        "collection-games": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-games installation."
+        },
+        "collection-humanities": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-humanities installation."
+        },
+        "collection-langarabic": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-langarabicc installation."
+        },
+        "collection-langchinese": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-langchinese installation."
+        },
+        "collection-langcjk": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-langcjk installation."
+        },
+        "collection-langcyrillic": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-langcyrillic installation."
+        },
+        "collection-langczechslovak": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-langczechslovak installation."
+        },
+        "collection-langenglish": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-langenglish installation."
+        },
+        "collection-langeuropean": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-langeuropean installation."
+        },
+        "collection-langfrench": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-langfrench installation."
+        },
+        "collection-langgerman": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-langgerman installation."
+        },
+        "collection-langgreek": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-langgreek installation."
+        },
+        "collection-langitalian": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-langitalian installation."
+        },
+        "collection-langjapanese": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-langjapanese installation."
+        },
+        "collection-langkorean": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-langkorean installation."
+        },
+        "collection-langother": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-langother installation."
+        },
+        "collection-langpolish": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-langpolish installation."
+        },
+        "collection-langportuguese": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-langportuguese installation."
+        },
+        "collection-langspanish": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-langspanish installation."
+        },
+        "collection-latex": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-latex installation."
+        },
+        "collection-latexextra": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-latexextra installation."
+        },
+        "collection-latexrecommended": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-latexrecommended installation."
+        },
+        "collection-luatex": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-luatex installation."
+        },
+        "collection-mathscience": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-mathscience installation."
+        },
+        "collection-metapost": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-metapost installation."
+        },
+        "collection-music": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-music installation."
+        },
+        "collection-pictures": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-pictures installation."
+        },
+        "collection-plaingeneric": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-plaingeneric installation."
+        },
+        "collection-pstricks": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-pstricks installation."
+        },
+        "collection-publishers": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-publishers installation."
+        },
+        "collection-texworks": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-texworks installation."
+        },
+        "collection-wintools": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-wintools installation."
+        },
+        "collection-xetex": {
+            "type": "boolean",
+            "default": false,
+            "description": "Enable TeX Live collection-xetex installation."
+        },
+        "extra-packages": {
+            "type": "string",
+            "default": "",
+            "description": "Space-separated list of individual TeX Live packages to install."
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

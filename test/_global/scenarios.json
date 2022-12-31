@@ -1,0 +1,15 @@
+{
+    "texlive_and_lilypond": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "texlive": {
+                "version": "latest",
+                "scheme": "basic",
+                "extra-packages": "auxhook babel-latin babel-portuges bigintcalc bitset chktex ctablestack ebgaramond enumitem etexcmds fancyhdr geometry gettitlestring gregoriotex hycolor infwarerr intcalc kvdefinekeys kvoptions kvsetkeys latexindent latexmk letltxmacro ltxcmds lua-uni-algos luacolor luamplib luatexbase memoir microtype paracol pdfescape refcount rerunfilecheck stringenc texcount textcase titlesec titling uniquecounter xstring"
+            },
+            "lilypond": {
+                "version": "2.22.2"
+            }
+        }
+    }
+}
