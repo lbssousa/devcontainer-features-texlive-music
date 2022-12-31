@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-LILYPOND_VERSION=${VERSION:-2.22.2}-1
+LILYPOND_VERSION=${VERSION:-2.24.0}-1
 LILYPOND_INSTALLER=lilypond-${LILYPOND_VERSION}.linux-64.sh
 
 # Taken from https://github.com/devcontainers/features/blob/main/src/go/install.sh
