@@ -24,7 +24,14 @@ check_packages() {
     fi
 }
 
-check_packages curl ca-certificates bzip2
+check_packages curl ca-certificates bzip2 unzip
+
+echo "Downloading EB Garamond font..."
+curl -L https://github.com/octaviopardo/EBGaramond12/archive/refs/heads/master.zip -o ebgaramond.zip
+
+echo "Installing EB Garamond font to /usr/local/share/fonts..."
+unzip ebgaramond.zip
+install -Dm644 EBGaramond12-master/fonts/otf/*.otf -t /usr/local/share/fonts/opentype/EBGaramond12
 
 echo "Downloading LilyPond version, version ${LILYPOND_VERSION}..."
 curl -LO https://gitlab.com/lilypond/lilypond/-/releases/v${LILYPOND_VERSION}/downloads/${LILYPOND_PACKAGE}
@@ -46,7 +53,7 @@ done
 
 
 # Clean up
-rm -f ./${LILYPOND_PACKAGE}
+rm -rf ./${LILYPOND_PACKAGE} ./EBGaramond12-master ./ebgaramond.zip
 apt-get clean
 
 echo "Done!"
