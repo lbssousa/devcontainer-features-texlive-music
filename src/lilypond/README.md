@@ -1,5 +1,4 @@
 
-
 # LilyPond from official site installer (lilypond)
 
 Install an up-to-date version of LilyPond from official site.
