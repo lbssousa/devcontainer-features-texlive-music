@@ -1,13 +1,14 @@
 {
     "name": "TeX Live from official site installer",
     "id": "texlive",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "description": "Install an up-to-date TeX Live distribution from official site.",
     "options": {
         "version": {
             "type": "string",
             "proposals": [
                 "latest",
+                "2023",
                 "2022",
                 "2021",
                 "2020",
