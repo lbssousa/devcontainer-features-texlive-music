@@ -1,5 +1,4 @@
 
-
 # TeX Live from official site installer (texlive)
 
 Install an up-to-date TeX Live distribution from official site.
