@@ -15,6 +15,7 @@ Install an up-to-date TeX Live distribution from official site.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
+| repository | Specify the package repository to be used as the source of the installation. | string | https://mirror.ctan.org/systems/texlive/tlnet |
 | version | Select or the TeX Live historic version to install. | string | latest |
 | scheme | Select or enter the TeX Live scheme to install. WARNING: _minimal_ scheme **DOES NOT** include LaTeX! | string | basic |
 | collection-basic | Enable TeX Live collection-basic installation. | boolean | false |
