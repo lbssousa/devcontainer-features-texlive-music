@@ -23,7 +23,7 @@ TL_VERSION="${VERSION:-latest}"
 
 if [ "${VERSION}" = "latest" ]
 then
-    URL="http://mirror.ctan.org/systems/texlive/tlnet"
+    URL="${REPOSITORY}"
 else
     URL="http://ftp.math.utah.edu/pub/tex/historic/systems/texlive/${TL_VERSION}"
 fi
@@ -59,7 +59,7 @@ rhel)
 esac
 
 echo "Downloading TeX Live installer (${TL_VERSION})..."
-wget ${URL}/install-tl-unx.tar.gz
+wget --timeout=120 ${URL}/install-tl-unx.tar.gz
 mkdir /tmp/install-tl-unx
 tar -xzvf install-tl-unx.tar.gz -C /tmp/install-tl-unx --strip-components=1
 
