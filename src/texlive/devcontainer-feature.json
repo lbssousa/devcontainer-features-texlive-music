@@ -4,6 +4,11 @@
     "version": "1.2.0",
     "description": "Install an up-to-date TeX Live distribution from official site.",
     "options": {
+        "repository": {
+            "type": "string",
+            "default": "https://mirror.ctan.org/systems/texlive/tlnet",
+            "description": "Specify the package repository to be used as the source of the installation."
+        },
         "version": {
             "type": "string",
             "proposals": [

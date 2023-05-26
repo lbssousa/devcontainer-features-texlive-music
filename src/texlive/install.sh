@@ -110,7 +110,7 @@ echo "Reviewing texlive.profile..."
 cat /tmp/install-tl-unx/texlive.profile
 
 echo "Installing TeX Live..."
-/tmp/install-tl-unx/install-tl -profile /tmp/install-tl-unx/texlive.profile
+/tmp/install-tl-unx/install-tl -profile /tmp/install-tl-unx/texlive.profile -repository ${REPOSITORY}
 TLMGR=$(find /usr/local/texlive -name tlmgr)
 echo "tlmgr path: ${TLMGR}"
 
