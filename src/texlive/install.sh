@@ -14,10 +14,6 @@ install_alpine_packages() {
     apk add --no-cache "${@}"
 }
 
-install_alpine_edge_packages() {
-    apk add --no-cache --repository=https://dl-cdn.alpinelinux.org/alpine/edge/community "${@}"
-}
-
 # Back up selected TeX Live version before loading /etc/os-release
 TL_VERSION="${VERSION:-latest}"
 
@@ -50,8 +46,7 @@ debian)
     install_debian_packages ca-certificates libfile-homedir-perl libunicode-linebreak-perl libyaml-tiny-perl perl-doc wget
     ;;
 alpine)
-    install_alpine_packages ca-certificates curl make perl perl-dev perl-doc perl-yaml-tiny wget perl-unicode-linebreak
-    install_alpine_edge_packages perl-file-homedir
+    install_alpine_packages ca-certificates curl make perl perl-dev perl-doc perl-file-homedir perl-yaml-tiny wget perl-unicode-linebreak
     ;;
 rhel)
     echo "RPM-based Linux distros not yet supported."
