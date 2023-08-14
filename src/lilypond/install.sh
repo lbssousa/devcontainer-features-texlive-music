@@ -44,7 +44,7 @@ fi
 
 case "${ADJUSTED_ID}" in
 debian)
-    install_debian_packages ca-certificates libfile-homedir-perl libunicode-linebreak-perl libyaml-tiny-perl perl-doc wget
+    install_debian_packages bzip2 ca-certificates curl ghostscript libfile-homedir-perl libunicode-linebreak-perl libyaml-tiny-perl perl-doc unzip wget
     ;;
 alpine)
     install_alpine_packages ca-certificates lilypond
@@ -53,8 +53,6 @@ rhel)
     echo "RPM-based Linux distros not yet supported."
     exit 1
 esac
-
-check_packages curl ca-certificates bzip2 unzip ghostscript
 
 echo "Downloading EB Garamond font..."
 curl -L https://github.com/octaviopardo/EBGaramond12/archive/refs/heads/master.zip -o ebgaramond.zip
