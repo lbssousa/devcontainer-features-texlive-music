@@ -15,7 +15,7 @@ Install an up-to-date version of LilyPond from official site.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select or enter a LilyPond version to install. | string | 2.24.0 |
+| version | Select or enter a LilyPond version to install. | string | 2.24.1 |
 
 
 
