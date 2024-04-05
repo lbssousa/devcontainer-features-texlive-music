@@ -10,6 +10,7 @@ install_debian_packages() {
 
     echo "Installing packages: ${@}"
     apt-get -y install --no-install-recommends "${@}"
+    apt-get clean
 }
 
 install_alpine_packages() {
@@ -76,6 +77,5 @@ done
 
 # Clean up
 rm -rf ./${LILYPOND_PACKAGE} ./EBGaramond12-master ./ebgaramond.zip
-apt-get clean
 
 echo "Done!"
