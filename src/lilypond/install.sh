@@ -44,10 +44,10 @@ fi
 
 case "${ADJUSTED_ID}" in
 debian)
-    install_debian_packages bzip2 ca-certificates curl ghostscript libfile-homedir-perl libunicode-linebreak-perl libyaml-tiny-perl perl-doc unzip wget
+    install_debian_packages bzip2 ca-certificates curl ghostscript unzip
     ;;
 alpine)
-    install_alpine_packages ca-certificates lilypond
+    install_alpine_packages bzip2 ca-certificates curl ghostscript glib libstdc++ unzip
     ;;
 rhel)
     echo "RPM-based Linux distros not yet supported."
