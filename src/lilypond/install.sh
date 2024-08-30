@@ -68,10 +68,18 @@ do
 done
 
 # Make TeX Live fonts available for LilyPond
-TEXLIVE_FONTS_CONF=$(find /usr/local/texlive texlive-fontconfig.conf || echo "")
-if [ -n ${TEXLIVE_FONTS_CONF} ]
+TEXMF_DIST=$(find /usr/local/texlive -name texmf-dist || echo)
+if [ -n ${TEXMF_DIST} ]
 then
-    ln -s ${TEXLIVE_FONTS_CONF} /opt/lilypond-${LILYPOND_VERSION}/etc/fonts/conf.d/99-texlive.conf
+    cat >/opt/lilypond-${LILYPOND_VERSION}/etc/fonts/conf.d/99-texlive.conf <<EOF
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<fontconfig>
+  <dir>${TEXMF_DIST}/fonts/opentype</dir>
+  <dir>${TEXMF_DIST}/fonts/truetype</dir>
+  <dir>${TEXMF_DIST}/fonts/type1</dir>
+</fontconfig>
+EOF
 fi
 
 # Clean up
