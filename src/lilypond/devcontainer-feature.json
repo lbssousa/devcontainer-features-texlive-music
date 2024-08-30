@@ -1,7 +1,7 @@
 {
     "name": "LilyPond from official site installer",
     "id": "lilypond",
-    "version": "1.5.2",
+    "version": "1.5.3",
     "description": "Install an up-to-date version of LilyPond from official site.",
     "options": {
         "version": {
