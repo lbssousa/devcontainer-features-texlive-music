@@ -43,7 +43,7 @@ fi
 
 case "${ADJUSTED_ID}" in
 debian)
-    install_debian_packages ca-certificates libfile-homedir-perl libunicode-linebreak-perl libyaml-tiny-perl perl-doc wget
+    install_debian_packages ca-certificates fontconfig libfile-homedir-perl libunicode-linebreak-perl libyaml-tiny-perl perl-doc wget
     ;;
 alpine)
     install_alpine_packages ca-certificates curl make perl perl-dev perl-doc perl-file-homedir perl-yaml-tiny wget perl-unicode-linebreak
