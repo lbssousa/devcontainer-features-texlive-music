@@ -1,7 +1,7 @@
 {
     "name": "TeX Live from official site installer",
     "id": "texlive",
-    "version": "1.4.0",
+    "version": "2.0.0",
     "description": "Install an up-to-date TeX Live distribution from official site.",
     "options": {
         "repository": {
@@ -13,6 +13,8 @@
             "type": "string",
             "proposals": [
                 "latest",
+                "2025",
+                "2024",
                 "2023",
                 "2022",
                 "2021",
